@@ -1,5 +1,6 @@
-#완성아님 다시해야함
+#pypy3 환경
 
+import sys
 
 def sec(lst):
     f = {}
@@ -16,11 +17,11 @@ def sec(lst):
         if f[k] == mxc:
             mod.append(k)
     
+    mod.sort()
     if len(mod) > 1:
-        return sorted(mod)[1]
+        return mod[1]
     else:
-        return mod[0]  
-
+        return mod[0]
 
 a = int(input())
 s = []
